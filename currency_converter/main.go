@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func convert(from string, to string, value float32) float32 {
+	return 2.5
+}
+
 func main() {
 	for {
 		var rupee float32
@@ -24,6 +28,9 @@ func main() {
 		if choice == 0 {
 			break
 		}
+
+		val := convert("USD", "INR", 10)
+		fmt.Println(val)
 
 		switch choice {
 		case 1:
