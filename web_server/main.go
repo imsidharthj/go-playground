@@ -10,7 +10,6 @@ func getProfileHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "appliaction/json")
 	w.Write([]byte(`{"name": "SJ"}`))
 }
-
 func main() {
 	r := http.NewServeMux()
 	r.HandleFunc("GET /", rootHandler)
